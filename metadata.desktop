@@ -1,0 +1,15 @@
+[SddmGreeterTheme]
+Name=Simple Login
+Description=Suckless SDDM Login Screen
+Author=niki-on-github
+License=MIT
+Type=sddm-theme
+Version=0.1
+Website=https://github.com/niki-on-github/simple-login-sddm-theme
+Screenshot=Preview.png
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=translations
+Email=git@todo.de
+Theme-Id=simple-login
+Theme-API=2.11
