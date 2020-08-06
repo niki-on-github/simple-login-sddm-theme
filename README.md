@@ -15,5 +15,3 @@ echo "[Theme]\nCurrent=simple-login" | sudo tee /etc/sddm.conf
 ```
 
 or select theme in KDE System-Settings.
-
-**NOTE:** The design is not yet finished!
