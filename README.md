@@ -9,9 +9,9 @@ A SDDM theme with simple, modern look. The theme was kept as simple as possible 
 ## Installation (Arch Linux)
 
 ```bash
-sudo pacman -Sy sddm qt5
-sudo git clone [URL] /usr/share/sddm/themes/simple-login
-echo "[Theme]\nCurrent=simple-login" | sudo tee /etc/sddm.conf
+sudo pacman -Sy sddm qt5 git
+sudo git clone https://github.com/niki-on-github/simple-login-sddm-theme.git /usr/share/sddm/themes/simple-login
+echo -e "[Theme]\nCurrent=simple-login" | sudo tee /etc/sddm.conf
 ```
 
 or select theme in KDE System-Settings.
