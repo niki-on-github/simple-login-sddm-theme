@@ -7,7 +7,6 @@ Column {
     id: inputContainer
     Layout.fillWidth: true
 
-    property Control exposeLogin: loginButton
     property bool failed
 
     // USERNAME INPUT
@@ -212,7 +211,6 @@ Column {
             }
 
             Keys.onReturnPressed: sddm.login(username.text, password.text, sessionSelect.selectedSession)
-            KeyNavigation.down: revealSecret
         }
 
         states: [
@@ -293,8 +291,8 @@ Column {
 
     Connections {
         target: sddm
-        onLoginSucceeded: {}
-        onLoginFailed: {
+        function onLoginSucceeded() {}
+        function onLoginFailed() {
             failed = true
             resetError.running ? resetError.stop() && resetError.start() : resetError.start()
         }

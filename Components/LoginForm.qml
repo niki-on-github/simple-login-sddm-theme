@@ -8,7 +8,7 @@ ColumnLayout {
 
     Rectangle {
         id: topMarginLoginForm
-        height: parent.height / 5
+        height: parent.height / 8
         width: parent.width / 2
         color: "#777"
         opacity: 0
@@ -16,25 +16,19 @@ ColumnLayout {
 
     Image {
         id: userImage
-
         sourceSize.height: parent.height / 5
-        anchors.horizontalCenter: parent.horizontalCenter
         source: Qt.resolvedUrl("../Assets/User.png")
         asynchronous: true
         cache: true
         clip: true
         mipmap: true
-
-        anchors.top: topMarginLoginForm.bottom
-        anchors.topMargin: 50
+        Layout.alignment: Qt.AlignBottom | Qt.AlignHCenter
     }
 
     Input {
         id: input
-        Layout.alignment: QT.AlignTop
         Layout.leftMargin: 0
         Layout.topMargin: 0
-        anchors.top: userImage.bottom
         anchors.topMargin: 50
     }
 }
